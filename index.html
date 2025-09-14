@@ -4,17 +4,23 @@
   <meta charset="UTF-8">
   <title>AI Chatbot with March 7th</title>
   <link rel="stylesheet" href="body.css">
+  <!-- PIXI.js + Live2D -->
   <script src="https://unpkg.com/pixi.js/dist/pixi.min.js"></script>
   <script src="https://unpkg.com/pixi-live2d-display/dist/index.min.js"></script>
 </head>
 <body>
   <h2>Ask March 7th (AI)</h2>
-  <div id="chat"></div>
-  <input id="input" type="text" placeholder="Type your question..." />
+  
+  <!-- Chat box -->
+  <div id="chat" style="border:1px solid #ccc; width:400px; height:200px; overflow-y:auto; padding:10px;"></div>
+  
+  <input id="input" type="text" placeholder="Type your question..." style="width:300px;" />
   <button onclick="ask()">Send</button>
 
+  <!-- Live2D canvas -->
   <canvas id="live2d" width="400" height="600"></canvas>
 
+  <!-- Main script -->
   <script src="JS.js"></script>
 </body>
 </html>
